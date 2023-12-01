@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  pre {
+    font-family: inherit; /* or omit this line entirely */
+  }
+  #a4-container {
+    width: 197mm; 
+    margin: 5mm auto; /* Adjust the top margin */
+    height: 286mm; 
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.main1
+{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  /* background-color: red; */
+}
+.upd{
+background-color: red;
+}
+
+.end{
+  /* align-items: center; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+  #a41-container{
+        /* margin-top: -55px; */
+        width: 200mm;
+        height: 280mm;
+
+        /* padding: 15px; */
+        /* border: 1px red solid; */
+
+  }
+  .notice{
+    white-space:pre-wrap;
+    font-size: 14px ;
+  }
+#cdc-igit{
+  font-size: 20px;
+}
+
+.text1{
+  font-size: 14px ;
+  margin-top: 4px;
+}
+  .notice{
+    max-width: 199mm;
+  }
+  
+  #logo{
+    width: 82px;
+  }
+
+  #igit-logo{
+    width:80px;
+  }
+  /* button{
+    height: 50px;
+    background-color: rgb(159, 159, 255);
+    border-radius: 5px solid black;
+
+  } */
+.signature{
+    margin-left: 126mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto
+}
+
+.left,
+.right {
+    flex: 0;
+}
+
+.middle {
+    flex: 2;
+    text-align: center;
+}
+.notice_container {
+    display: flex;
+    justify-content: space-between;
+
+}
+.company_name{
+    margin-top: -15px;
+    text-align: center;
+    font-size: 18px;
+}
+.company_name1{    margin-top: 10px;
+  text-align: center;}
+
+
+/* Table Stylingsss :: */
+
+.tablee {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tablee td, .tablee th {
+  border: 1px solid #adadad;
+  padding: 3px;
+  text-align: left;
+}
+
+.tablee th {
+  background-color: #f2f2f2;
+}
+
+
+.tablee td:first-child {
+  font-weight: bold;
+}
+
+
+.tablee td div {
+  margin-bottom: 1px;
+}
+
+hr{
+  margin-top: -11px;
+}

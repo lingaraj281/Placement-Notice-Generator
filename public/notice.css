@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(179, 179, 179);
+}
+.container{
+    background-color: aliceblue;
+    width: 70vw;
+    box-shadow: 3px 3px 30px rgba(5, 5, 0, 0.3);
+
+}
+.upd1{
+    /* align-items: center; */
+    color: white;
+    display: flex;
+    margin-bottom: 2%;
+    margin-left: 50%;
+    align-items: center;
+    background-color: rgb(93, 0, 255);
+}
+.mid-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    margin: 0;
+}
+.submit{
+    margin-top: 25px;
+}
+.heading{
+    text-align: center;
+}
+/* Define the default style of the button */
+#colorButton {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Define the style for the button when the "active" class is applied */
+  #colorButton.active {
+    background-color: green;
+  }
+  .btn{
+    margin-top: 25px;
+  }

@@ -1,0 +1,119 @@
+<div>
+    <label for="Streams">
+            Streams :
+        <label for="B.tech">  
+            <input type="checkbox" id="B.tech" name="notice[Streams]" value="B.Tech">
+        B.Tech
+        </label>
+
+        <label for="M.tech">                 
+            <input type="checkbox" id="M.tech" name="notice[Streams]" value="M.Tech">
+         M.Tech
+        </label>
+        <label for="MCA">                  
+            <input type="checkbox" id="MCA" name="notice[Streams]" value="MCA">
+         MCA
+        </label>
+        <label for="Diploma">                  
+            <input type="checkbox" id="Diploma" name="notice[Streams]" value="Diploma">
+         Diploma
+        </label>
+        <label for="Msc">  
+            <input type="checkbox" id="Msc" name="notice[Streams]" value="M.Sc.">
+         M.Sc.
+
+    </div>
+
+
+    <div>
+        <label for="Branch">Branch :
+
+        <label for="ETC">
+            
+            <input type="checkbox" id="ETC" name="notice[Branch]" value="ETC">
+            ETC
+        </label>
+
+        <label for="CSE">
+            
+            <input type="checkbox" id="CSE" name="notice[Branch]" value="CSE">
+            CSE
+        </label>
+
+        <label for="EE">
+            
+            <input type="checkbox" id="EE" name="notice[Branch]" value="Electrical">
+            Electrical
+        </label>
+
+        <label for="Chem">
+            
+            <input type="checkbox" id="Chem" name="notice[Branch]" value="Chemical">
+            Chemical
+        </label>
+
+        <label for="Mech">
+            
+            <input type="checkbox" id="Mech" name="notice[Branch]" value="Mechanical">
+            Mechanical
+        </label>
+
+
+        <label for="Mett">
+            
+            <input type="checkbox" id="Mett" name="notice[Branch]" value="Metallurgy">
+            Metallurgy
+        </label>
+
+        <label for="Civil">
+            
+            <input type="checkbox" id="Civil" name="notice[Branch]" value=" Civil">
+            Civil
+        </label>
+
+        <label for="Prod">
+            
+            <input type="checkbox" id="Prod" name="notice[Branch]" value="Production">
+            Production
+        </label>
+
+
+        <label for="App_Phy">
+            
+            <input type="checkbox" id="App_Phy" name="notice[Branch]" value="Applied Physics">
+            Applied Physics
+        </label>
+
+        
+        <label for="App_Chem">
+            
+            <input type="checkbox" id="App_Chem" name="notice[Branch]" value="Applied Chemistry">
+            Applied Chemistry
+        </label>
+
+                    
+        <label for="Mathematics">
+            <input type="checkbox" id="Mathematics" name="notice[Branch]" value="Applied Mathematics">
+            Applied Mathematics
+        </label>
+
+        </label>
+</div>
+
+<script>
+    // Get a reference to the button element
+const colorButton = document.getElementById('colorButton');
+
+// Add a click event listener to the button
+colorButton.addEventListener('click', () => {
+  // Toggle the "active" class on the button
+  colorButton.classList.toggle('active');
+  event.preventDefault();
+});
+
+function button2Click() {
+  // Do nothing for button 2 (disable its functionality)
+  document.getElementById('status').innerText = 'Button 2 Disabled';
+  document.getElementById('button2').disabled = true;
+}
+</script>
