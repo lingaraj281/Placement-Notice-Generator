@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="/notice.css" type="text/css">
 </head>
 <body>
-    <form action="/othernotice/<%=notice._id%>?_method=PUT" method="POST">
+    <form action="/notices/<%=notice._id%>?_method=PUT" method="POST">
 
         <div class="container">
             
                 
-                <h1 class="heading">EDIT THE NOTICE</h1>
+                <h1 class="heading"><%= notice.Company %></h1>
     <!-- Notice No. & Date -->
                 <div class="row">
                     <div class="col">
@@ -78,7 +78,7 @@
                     </div>
                 </div>
 
-                <button class="btn btn-primary upd1" onclick="processInput()">Update</button>
+                <button class="btns" onclick="processInput()">Update</button>
     </form>
 
 

@@ -13,7 +13,7 @@
 
 <body>
     <div id="a4-container">
-        <div id="a41-container">
+        <div id="a41-container" >
             <div class="header">
                 <div class="left">
                     <img src="/igit logo.png" alt="igitlogo" id="igit-logo">
@@ -37,9 +37,9 @@
             <h4 class="company_name1">NOTICE</h4>
             <p class="company_name">-- <%= notice.Company%> -- </p>
             <!-- <br> -->
-            <div class="text1"><b>Stream:</b> <%= notice.Streams %></div>
+            <div class="text1"><b>Stream:</b> <%= notice.Streams.join(", ") %></div>
 
-            <div class="text1"><b>Branch:</b> <%= notice.Branch %></div>
+            <div class="text1"><b>Branch:</b> <%= notice.Branch.join(", ") %></div>
 
             <% if (notice.YOP) { %>
             <div class="text1"><b>Passout Year:</b> <%= notice.YOP %></div>
@@ -50,9 +50,9 @@
             <% } %>
 
             <% if (notice.CTC) { %>
-            <div class="text1"><b>CTC:</b> <%= notice.CTC %></div>
+            <div class="text2"><b>CTC:</b> <%= notice.CTC %></div>
             <% } %>
-            <b>Notice:</b>
+            
             <span class="notice">
                 <%= notice.Notice %>
             </span>
@@ -68,7 +68,7 @@
 
             <div class="signature">
 
-                <img src="/sign.png" alt="" id="logo">
+                <img src="/sign1.png" alt="" id="logo">
                 <h3 class="text1">Professor-in-charge, CDC</h3>
                 
             </div>
@@ -79,11 +79,11 @@
     </div>
 
     <div class="end">
-    <button id="download">Generate PDF</a></button>
+    <button id="download" class="btns">Generate PDF</a></button>
     
-    <button><a href="/notices/<%= notice._id%>/edit1" target="_blank">Edit</a></button>
+    <button class="btns"><a href="/notices/<%= notice._id%>/edit1"  class="abtns">Edit</a></button>
 
-    <button><a href="/notices/" target="_blank">All Notices</a></button>
+    <button class="btns"><a href="/notices/" class="abtns">All Notices</a></button>
     </div>
 
 

@@ -1,10 +1,14 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman';
   }
-  pre {
-    font-family: inherit; /* or omit this line entirely */
+  span {
+    font-family: inherit; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* or omit this line entirely */
   }
   #a4-container {
     width: 197mm; 
@@ -15,6 +19,38 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
+
+.btns{
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 7px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #3498db; /* Blue color */
+  color: #3498db; /* Text color */
+  background-color: white; /* Background color */
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btns:hover{
+  background-color: #3498db; /* Blue color on hover */
+  color: white; /* Text color on hover */
+}
+
+.abtns{
+  text-decoration: none;
+}
+.abtns:hover{
+  background-color: #3498db; /* Blue color on hover */
+  color: white; /* Text color on hover */
+}
+
 
 .main{
   text-align: center;
@@ -52,6 +88,7 @@ background-color: red;
         /* border: 1px red solid; */
 
   }
+
   .notice{
     white-space:pre-wrap;
     font-size: 14px ;
@@ -62,8 +99,16 @@ background-color: red;
 
 .text1{
   font-size: 14px ;
-  margin-top: 4px;
+  margin-top: 8px;
 }
+
+.text2{
+  font-size: 14px ;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+
   .notice{
     max-width: 199mm;
   }
