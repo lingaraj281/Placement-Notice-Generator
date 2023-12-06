@@ -12,24 +12,24 @@ const ejs = require('ejs')
 
 // FOR LOCAL HOSTING 
 // --------------------
-mongoose.connect('mongodb://127.0.0.1:27017/igitcdc_notice', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+// mongoose.connect('mongodb://127.0.0.1:27017/igitcdc_notice', {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
 
-const db = mongoose.connection
-db.on('error', console.error.bind(console, 'connection error'));
-db.once('open', () => {
-  console.log('Database connected');
-});
+// const db = mongoose.connection
+// db.on('error', console.error.bind(console, 'connection error'));
+// db.once('open', () => {
+//   console.log('Database connected');
+// });
 
-mongoose.connect(db,{
-  useNewUrlParser:true,
-  useUnifiedTopology:true,
-  }).then(()=>{
-    console.log(`Connection Sucessful`);
+// mongoose.connect(db,{
+//   useNewUrlParser:true,
+//   useUnifiedTopology:true,
+//   }).then(()=>{
+//     console.log(`Connection Sucessful`);
   
-  }).catch((err) => console.log("No Connections"));
+//   }).catch((err) => console.log("No Connections"));
 
 
 mongoose.connect("mongodb+srv://lingarajs2002:FYRvqlUhgpn0oPr2@cdc-notice.xxgcady.mongodb.net/?retryWrites=true&w=majority",{
@@ -38,20 +38,20 @@ useUnifiedTopology: true,
 })
 
 
-// const db = mongoose.connection
-// db.on('error', console.error.bind(console, 'connection error'));
-// db.once('open', () => {
-//   console.log('Database connected');
-// });
+const db = mongoose.connection
+db.on('error', console.error.bind(console, 'connection error'));
+db.once('open', () => {
+  console.log('Database connected');
+});
 
 
-// mongoose.connect("mongodb+srv://lingarajs2002:FYRvqlUhgpn0oPr2@cdc-notice.xxgcady.mongodb.net/?retryWrites=true&w=majority",{
-//   useNewUrlParser:true,
-//   useUnifiedTopology:true,
-//   }).then(()=>{
-//     console.log(`Connection Sucessful`);
+mongoose.connect("mongodb+srv://lingarajs2002:FYRvqlUhgpn0oPr2@cdc-notice.xxgcady.mongodb.net/?retryWrites=true&w=majority",{
+  useNewUrlParser:true,
+  useUnifiedTopology:true,
+  }).then(()=>{
+    console.log(`Connection Sucessful`);
   
-//   }).catch((err) => console.log("No Connections"));
+  }).catch((err) => console.log("No Connections"));
 
 
 const app = express();
