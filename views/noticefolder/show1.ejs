@@ -25,7 +25,7 @@
                     </span>
                 </div>
                 <div class="right">
-                    <img src="/41.png" alt="41years" id="logo">
+                    <img src="/42 yrs.png" alt="42 years" id="logo">
                 </div>
             </div>
     
@@ -34,7 +34,7 @@
                 <p class="notice_date">Date: <%= notice.date %></p>
             </div>
             <hr>
-            <h4 class="company_name1">NOTICE</h4>
+            <h4 class="company_name1" style="font-size: 20px;">NOTICE</h4>
             <p class="company_name">-- <%= notice.Company%> -- </p>
             <!-- <br> -->
             <div class="text1"><b>Stream:</b> <%= notice.Streams.join(", ") %></div>
@@ -50,11 +50,19 @@
             <% } %>
 
             <% if (notice.CTC) { %>
+<<<<<<< HEAD
+            <div class="text23"><b>CTC:</b> <%= notice.CTC %>
+            <% } %>
+            
+            <!-- <b>Notice</b> -->
+
+=======
             <div class="text2"><b>CTC:</b> <%= notice.CTC %></div>
             <% } %>
             
+>>>>>>> 2e0f1082367fc8b8f599a1105c5c21493fbb1600
             <span class="notice">
-                <%= notice.Notice %>
+                <p><%= notice.Notice %></p>
             </span>
 
             <% if (notice.website) { %>
@@ -84,7 +92,15 @@
     <button class="btns"><a href="/notices/<%= notice._id%>/edit1"  class="abtns">Edit</a></button>
 
     <button class="btns"><a href="/notices/" class="abtns">All Notices</a></button>
+<<<<<<< HEAD
+
+    <button class="btns"><a href="/notices/new" class="abtns">New Notice</a></button>
+=======
+>>>>>>> 2e0f1082367fc8b8f599a1105c5c21493fbb1600
     </div>
+
+
+</div>
 
 
  

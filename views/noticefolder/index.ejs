@@ -4,15 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campgrounds</title>
+    <style>
+        a{
+            text-decoration: None;
+        }
+        a:hover{
+            color: red;
+        }
+    </style>
 </head>
 <body>
-    <h1>All Notices</h1>
+    <h1>All Notices</h1> <a href="/newNotice">👈Back to Home Page</a>
     <ul>
-        <% for (let notice of notices) {%>
-            <li>               
-                <a href="<%= notice._id %>"><%= notice.Company %></a>
-            </li>
-            <%}%>
-    </ul>
+        
+        <% 
+        <!-- // Reverse the order of notices to display the most recent one first -->
+        const reversedNotices = notices.slice().reverse(); 
+        for (let notice of reversedNotices) {
+      %>
+        <% if (notice.Company) { %>
+          <li>
+            <a href="<%= notice._id %>"><%= notice.Company %></a>
+          </li>
+        <% } %>
+      <% } %>
+    
 </body>
+
+<script>
+    // Function to update the current date and time
+    function updateDate() {
+        const currentDate = new Date();
+        const options = {  year: 'numeric', month: 'long', day: 'numeric' };
+        const formattedDate = currentDate.toLocaleDateString('en-US', options);
+
+        // Update the content of the HTML element with the current date
+        document.getElementById('currentDate').textContent = formattedDate;
+    }
+
+    // Update the date initially and set an interval to update it every second
+    updateDate();
+    setInterval(updateDate, 1000);
+</script>
 </html>

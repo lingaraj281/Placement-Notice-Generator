@@ -1,7 +1,11 @@
 body {
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
+    font-family: Arial, Helvetica, sans-serif;
+=======
     font-family: 'Times New Roman';
+>>>>>>> 2e0f1082367fc8b8f599a1105c5c21493fbb1600
   }
   span {
     font-family: inherit; 
@@ -91,30 +95,51 @@ background-color: red;
 
   .notice{
     white-space:pre-wrap;
-    font-size: 14px ;
+    font-size: 16px ;
   }
 #cdc-igit{
   font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .text1{
+<<<<<<< HEAD
+  font-size: 15px ;
+=======
   font-size: 14px ;
+>>>>>>> 2e0f1082367fc8b8f599a1105c5c21493fbb1600
   margin-top: 8px;
 }
 
 .text2{
+<<<<<<< HEAD
+  font-size: 15px ;
+  margin-top: 8px;
+  /* margin-bottom: 8px; */
+}
+
+.text23{
+  font-size: 15px ;
+  margin-top: 8px;
+  /* margin-bottom: 8px; */
+=======
   font-size: 14px ;
   margin-top: 8px;
   margin-bottom: 8px;
+>>>>>>> 2e0f1082367fc8b8f599a1105c5c21493fbb1600
 }
 
 
   .notice{
     max-width: 199mm;
+    margin-top: 0;
   }
-  
+
+  span.notice {
+    margin-top: 0;
+}
   #logo{
-    width: 82px;
+    width: 96px;
   }
 
   #igit-logo{
@@ -152,14 +177,17 @@ background-color: red;
 .notice_container {
     display: flex;
     justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 .company_name{
     margin-top: -15px;
     text-align: center;
     font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .company_name1{    margin-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
   text-align: center;}
 
 
