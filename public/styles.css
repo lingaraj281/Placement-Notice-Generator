@@ -1,11 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
     font-family: Arial, Helvetica, sans-serif;
-=======
-    font-family: 'Times New Roman';
->>>>>>> 2e0f1082367fc8b8f599a1105c5c21493fbb1600
   }
   span {
     font-family: inherit; 
@@ -103,16 +99,11 @@ background-color: red;
 }
 
 .text1{
-<<<<<<< HEAD
   font-size: 15px ;
-=======
-  font-size: 14px ;
->>>>>>> 2e0f1082367fc8b8f599a1105c5c21493fbb1600
   margin-top: 8px;
 }
 
 .text2{
-<<<<<<< HEAD
   font-size: 15px ;
   margin-top: 8px;
   /* margin-bottom: 8px; */
@@ -122,11 +113,6 @@ background-color: red;
   font-size: 15px ;
   margin-top: 8px;
   /* margin-bottom: 8px; */
-=======
-  font-size: 14px ;
-  margin-top: 8px;
-  margin-bottom: 8px;
->>>>>>> 2e0f1082367fc8b8f599a1105c5c21493fbb1600
 }
 
 
