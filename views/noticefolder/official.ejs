@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="/notice.css" type="text/css">
+    <style>
+        
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <form action="/notices1" method="POST" class="mid-container">
+            
+            <h1 class="heading">OFFICIAL NOTICE GENERATOR</h1>
+<!-- Notice No. & Date -->
+            <div class="row">
+                <div class="col">
+                    <label for="date">Date</label>
+                    <input type="text" id="date" name="notice[date]" class="form-control" >
+                </div>
+                <div class="col">
+                    <label for="Company">Company:</label>
+                    <input type="text" id="Company" name="notice[Company]" class="form-control">
+                </div>
+            </div>
+<div class="row">
+
+                <div class="col">
+                    <label for="position">Position</label>
+                    <input type="text" id="position" name="notice[position]" class="form-control"> 
+                </div>
+                <div class="col">
+                    <label for="YOP">Passout Year:</label>
+                    <input type="text" id="YOP" name="notice[YOP]" class="form-control">
+                </div>
+            </div>
+
+
+            <%- include('streams.ejs') %>
+
+            <div class="row">
+                <div class="col">
+                    <label for="drive_date">Drive Date</label>
+                    <input type="text" id="website" name="notice[drive_date]" class="form-control">
+                </div>
+            </div>
+
+            <label for="Notice">Enter the notice</label>
+
+            <div>
+                
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group mb-0 mt-0">
+                        <textarea id="Notice" name="notice[Notice]" cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+        CC :         
+        <label for="estate">
+        <input type="checkbox" id="estate" name="notice[cc]" value="Estate manager for necessary arrangements of Generators.">
+        Estate
+        </label>
+
+        <label for="warden">
+        <input type="checkbox" id="warden" name="notice[cc]" value="Warden of Hostel for information and necessary arrangement of Generators required in the hostels."
+        
+        
+        >
+        Warden
+        </label>
+
+
+            
+                </div>
+              <script>
+                function changeColorAndSubmit() {
+                  const colorBox = document.querySelector('.color-box');
+                  const boxText = document.getElementById('boxText');
+                  
+                  // Change color
+                  colorBox.style.backgroundColor = 'lightgreen';
+            
+                  // Redirect to the next page with the text value
+                  const textValue = boxText.innerText;
+                  window.location.href = '/nextpage?textValue=' + encodeURIComponent(textValue);
+                }
+              </script>
+
+                <button class="btn btns btn-primary" onclick="processInput()">Submit</button>
+
+            
+            
+        </form>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>

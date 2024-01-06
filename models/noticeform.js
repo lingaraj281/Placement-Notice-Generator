@@ -5,6 +5,8 @@ const NoticeSchema = new Schema({
     _id: { type: Schema.Types.ObjectId, auto: true },
     noticenom: String,
     date: String,
+    drive_date:String,
+    cc:[{type: String}],
     Streams: [{type: String}],
     Branch: [{type: String}],
     Company: String,
@@ -14,10 +16,6 @@ const NoticeSchema = new Schema({
     website: String,
     Notice: String,
     position:String,
-    eligibility1: String,
-    eligibility2: String,
-    eligibility3: String,
-    eligibility4: String,
 });
 
 

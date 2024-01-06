@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  span {
+    font-family: inherit; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* or omit this line entirely */
+  }
+  #a4-container {
+    width: 197mm; 
+    margin: 5mm auto; /* Adjust the top margin */
+    height: 286mm; 
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+.btns{
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #3498db; /* Blue color */
+  color: #3498db; /* Text color */
+  background-color: white; /* Background color */
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btns:hover{
+  background-color: #3498db; /* Blue color on hover */
+  color: white; /* Text color on hover */
+}
+
+.abtns{
+  text-decoration: none;
+}
+.abtns:hover{
+  background-color: #3498db; /* Blue color on hover */
+  color: white; /* Text color on hover */
+}
+
+
+.main{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.main1
+{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  /* background-color: red; */
+}
+.upd{
+background-color: red;
+}
+
+.end{
+  /* align-items: center; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+  #a41-container{
+        /* margin-top: -55px; */
+        width: 200mm;
+        height: 280mm;
+
+        /* padding: 15px; */
+        /* border: 1px red solid; */
+
+  }
+
+  .notice{
+    white-space:pre-wrap;
+    font-size: 15px ;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    /* background-color: red; */
+  }
+
+
+
+#cdc-igit{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.text1{
+  font-size: 14px ;
+  margin-top: 8px;
+}
+
+.text2{
+  font-size: 14px ;
+  margin-top: 8px;
+  /* margin-bottom: 8px; */
+}
+
+.text23{
+  font-size: 14px ;
+  margin-top: 8px;
+  /* margin-bottom: 8px; */
+}
+
+
+  .notice{
+    max-width: 199mm;
+    margin-top: 0;
+  }
+
+  span.notice {
+    margin-top: 0;
+}
+  #logo{
+    width: 96px;
+  }
+
+  #igit-logo{
+    width:80px;
+  }
+  /* button{
+    height: 50px;
+    background-color: rgb(159, 159, 255);
+    border-radius: 5px solid black;
+
+  } */
+.signature{
+    margin-left: 126mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto
+}
+
+.left,
+.right {
+    flex: 0;
+}
+
+.middle {
+    flex: 2;
+    text-align: center;
+}
+.notice_container {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.company_name{
+    margin-top: -15px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.company_name1{    margin-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;}
+
+
+/* Table Stylingsss :: */
+
+.tablee {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tablee td, .tablee th {
+  border: 1px solid #adadad;
+  padding: 3px;
+  text-align: left;
+}
+
+.tablee th {
+  background-color: #f2f2f2;
+}
+
+
+.tablee td:first-child {
+  font-weight: bold;
+}
+
+
+.tablee td div {
+  margin-bottom: 1px;
+}
+
+hr{
+  margin-top: -11px;
+}

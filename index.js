@@ -24,13 +24,10 @@ const ejs = require('ejs')
 // });
 
 // mongoose.connect(db,{
-//   useNewUrlParser:true,
-//   useUnifiedTopology:true,
 //   }).then(()=>{
 //     console.log(`Connection Sucessful`);
   
 //   }).catch((err) => console.log("No Connections"));
-
 
 mongoose.connect("mongodb+srv://lingarajs2002:FYRvqlUhgpn0oPr2@cdc-notice.xxgcady.mongodb.net/?retryWrites=true&w=majority",{
 useNewUrlParser: true,
@@ -78,26 +75,6 @@ app.get('/notices/new', (req, res) => {
   res.render('noticefolder/new');
 });
 
-
-app.post('/notices', async (req, res) => {
-  const notice = new Notice(req.body.notice);
-  console.log(notice)
-  await notice.save();
-  res.redirect(`/notices/${notice._id}`);
-});
-
-app.post('/othernotice', async (req, res) => {
-  const notice = new Notice(req.body.notice);
-  console.log(notice)
-  await notice.save();
-  res.redirect(`/othernotice/${notice._id}`);
-});
-
-app.get('/othernotice/:id', async (req, res) => {
-  const notice = await Notice.findById(req.params.id); // Use 'params' instead of 'body'
-  res.render('noticefolder/show1', { notice });
-});
-
 app.get('/notices/:id', async (req, res) => {
   const notice = await Notice.findById(req.params.id); // Use 'params' instead of 'body'
   res.render('noticefolder/show1', { notice });
@@ -115,6 +92,13 @@ app.get('/notices/:id/edit1',async(req,res)=>{
   console.log(notice)
 })
 
+app.get('/notices/:id/edit2',async(req,res)=>{
+  const notice = await Notice.findById(req.params.id); 
+  res.render('noticefolder/edit2', { notice });
+  console.log(notice)
+})
+
+
 
 app.post('/notices/:id/newpdf',async(req,res)=>{
   res.send("hello")
@@ -126,13 +110,29 @@ app.put('/notices/:id',async(req,res)=>{
   res.redirect(`/notices/${notice._id}`);
 })
 
-app.put('/othernotice/:id',async(req,res)=>{
-  const {id} = req.params
-  const notice = await Notice.findByIdAndUpdate(id,{...req.body.notice})
-  res.redirect(`/othernotice/${notice._id}`);
-})
-
 
 app.listen(3000, () => {
   console.log('Serving on port 3000');
+});
+
+
+
+
+
+
+
+app.get('/notices1/official', (req, res) => {
+  res.render('noticefolder/official');
+});
+
+app.post('/notices1', async (req, res) => {
+  const notice = new Notice(req.body.notice);
+  console.log(notice)
+  await notice.save();
+  res.redirect(`/notices1/${notice._id}`);
+});
+
+app.get('/notices1/:id', async (req, res) => {
+  const notice = await Notice.findById(req.params.id); // Use 'params' instead of 'body'
+  res.render('noticefolder/show2', { notice });
 });
