@@ -125,6 +125,13 @@ app.get('/notices1/official', (req, res) => {
   res.render('noticefolder/official');
 });
 
+app.post('/notices', async (req, res) => {
+  const notice = new Notice(req.body.notice);
+  console.log(notice)
+  await notice.save();
+  res.redirect(`/notices/${notice._id}`);
+});
+
 app.post('/notices1', async (req, res) => {
   const notice = new Notice(req.body.notice);
   console.log(notice)
