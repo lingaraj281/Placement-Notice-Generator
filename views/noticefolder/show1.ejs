@@ -104,7 +104,7 @@
           html2pdf()
             .from(noticeContainer)
             .set({
-              filename: '<%= notice.Company %> (FY-<%notice.YOP%>).pdf',
+              filename: '<%= notice.Company %> (FY-<%=notice.YOP%>).pdf',
               imageType: "png", // Use JPEG format for images,
               html2canvas: { scale: 3, ignoreElements: 'sideicon'},
               jsPDF : {unit: 'mm'}
